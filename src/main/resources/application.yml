@@ -1,0 +1,16 @@
+server:
+  port: 3690
+spring:
+  application:
+    name: spider-news
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  # 扫描mapper.xml文件
+  configuration:
+    map-underscore-to-camel-case: true #配置驼峰属性自动映射
